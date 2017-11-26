@@ -3,6 +3,7 @@ version: '2'
 services:
 
   elasticsearch:
+    image: sansusan/elasticsearch-sg:$ELK_VERSION
     build:
       context: elasticsearch/
       args:
